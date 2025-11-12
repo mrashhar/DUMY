@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WakalatGuru | Coming Soon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom animations */
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes pulseText {
+      0%, 100% {
+        color: #2563eb;
+      }
+      50% {
+        color: #1e40af;
+      }
+    }
+
+    .fade-in-up {
+      animation: fadeInUp 1.5s ease forwards;
+    }
+
+    .animate-pulse-text {
+      animation: pulseText 2s infinite;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 min-h-screen flex items-center justify-center">
+  <div class="text-center px-4">
+    <!-- Animated Title -->
+    <h1 class="text-5xl font-bold mb-6 text-gray-900 dark:text-white fade-in-up animate-pulse-text">
+      WakalatGuru
+    </h1>
+
+    <!-- Subheading -->
+    <h2 class="text-3xl text-gray-700 dark:text-gray-300 mb-8 fade-in-up" style="animation-delay: 0.5s;">
+      Coming Soon!
+    </h2>
+
+    <!-- Description -->
+    <p class="text-lg text-gray-600 dark:text-gray-400 mb-12 fade-in-up" style="animation-delay: 1s;">
+      Our website is under construction. We’ll be live shortly!
+    </p>
+
+    <!-- Email Form -->
+    <form class="flex flex-col md:flex-row justify-center items-center gap-4 fade-in-up" style="animation-delay: 1.5s;">
+      <input
+        type="email"
+        placeholder="Enter your email address"
+        class="w-full md:w-80 py-2 px-4 border text-gray-800 dark:text-white border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 rounded-lg focus:outline-none"
+      />
+      <button
+        class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-lg transition-colors"
+      >
+        Notify Me
+      </button>
+    </form>
+  </div>
+</body>
+</html>
